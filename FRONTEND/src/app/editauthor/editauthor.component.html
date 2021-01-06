@@ -1,0 +1,44 @@
+<div class="card-body">
+    <div class="row justify-content-center ">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12">    
+            <div class="card" id="card2">
+                <h2 class="card-header text-center"> EDIT AUTHOR </h2>
+                <div class="card-body">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td> Title </td>
+                            <td> <input type="text" name="authorTitle" class="form-control" [(ngModel)]="author.authorTitle" required > </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td> Author </td>
+                            <td> <input type="text" class="form-control" name="book" [(ngModel)]="author.book" required> </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td> Genre </td>
+                            <td> <input type="text" class="form-control" name="genre" [(ngModel)]="author.genre" required> </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td> Description </td>
+                            <td> <textarea class="form-control" name="description" [(ngModel)]="author.description" id="" cols="100" rows="5"></textarea> </td>
+                        </tr>
+                        <br>
+                        
+                        <tr>
+                            <td> Upload Image </td>
+                            <td> <input type="text" class="form-control" name="aimage" [(ngModel)]="author.urlToImage" > </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td> <button type="reset" class="btn btn-primary"> Reset </button></td>
+                            <td> <button type="button" (click)="editAuthor()" class="btn btn-success" > Edit </button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
